@@ -1,0 +1,8 @@
+digraph G{
+ rankdir=LR;
+labelloc = "t";
+node [shape=record];
+"IP: 192.168.1.6, Port: 5001."->"IP: 192.168.1.4, Port: 5000.";
+"IP: 192.168.1.4, Port: 5000.";
+graph[label="Lista de Nodos en la red.."];
+}

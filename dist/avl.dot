@@ -1,0 +1,25 @@
+digraph G{
+ rankdir=TB;
+labelloc = "t";
+node [shape=record];
+"Informativos" [label = "<C0>|Informativos\nLibros: 9|<C1>"];
+"Consulta" [label = "<C0>|Consulta\nLibros: 5|<C1>"];
+"Biografia" [label = "<C0>|Biografia\nLibros: 2|<C1>"];
+"" [label = "\nLibros: 1"];
+"Biografia":C0->"";
+"Consulta":C0->"Biografia";
+"Drama" [label = "<C0>|Drama\nLibros: 10|<C1>"];
+"Epico" [label = "Epico\nLibros: 3"];
+"Drama":C1->"Epico";
+"Consulta":C1->"Drama";
+"Informativos":C0->"Consulta";
+"Revista" [label = "<C0>|Revista\nLibros: 9|<C1>"];
+"Literatura" [label = "<C0>|Literatura\nLibros: 4|<C1>"];
+"Lirico" [label = "Lirico\nLibros: 5"];
+"Literatura":C0->"Lirico";
+"Revista":C0->"Literatura";
+"Sagas" [label = "Sagas\nLibros: 2"];
+"Revista":C1->"Sagas";
+"Informativos":C1->"Revista";
+graph[label="Arbol AVL: Categorias."];
+}

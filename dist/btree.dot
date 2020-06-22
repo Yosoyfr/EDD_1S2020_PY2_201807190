@@ -1,0 +1,13 @@
+digraph G{
+ rankdir=TB;
+labelloc = "t";
+node [shape=record];
+"16824"[label="<C0>|ISBN: 16824 \n Title: Revista cientifica|<C1>|ISBN: 16832 \n Title: Reporte de la reforma judicial|<C2>", color="black"];
+"16692"[label="ISBN: 16692 \n Title: Memoria de labores : Puerto Quetzal, enlace con el mundo|ISBN: 16693 \n Title: Primera plana : Prensa Libre 1951-2001"];
+"16825"[label="ISBN: 16825 \n Title: Archivos Latinoamericanos de Nutricion, v 26 (1,3), 1976|ISBN: 16831 \n Title: Revista Universidad del Valle de Guatemala"];
+"16835"[label="ISBN: 16835 \n Title: Industry's future: changing patterns of industrial research|ISBN: 16836 \n Title: Perspectives in bioconjugate chemistry|ISBN: 16837 \n Title: Managing the unknowable: strategic, boundaries between order and chaos in organizations|ISBN: 16838 \n Title: Archivos Latinoamericanos de Nutricion, v 19 (1-4), 1969"];
+"16824":C0->"16692";
+"16824":C1->"16825";
+"16824":C2->"16835";
+graph[label="Arbol B: Drama."];
+}
